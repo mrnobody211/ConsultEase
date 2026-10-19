@@ -1,0 +1,177 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+    line-height: 1.5;
+}
+
+nav {
+    background: #003366;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a.brand {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .links a {
+    color: #cfe0f7;
+    text-decoration: none;
+    margin-left: 24px;
+    font-size: 14px;
+}
+
+nav .links a:hover { color: #fff; }
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 32px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.container.wide { max-width: 1000px; }
+
+h2 {
+    color: #003366;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.card-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.card-list li {
+    margin-bottom: 12px;
+}
+
+.card-list a {
+    display: block;
+    padding: 16px 20px;
+    background: #f0f4fa;
+    border-left: 4px solid #003366;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: 600;
+    transition: background 0.15s;
+}
+
+.card-list a:hover { background: #e2ecf9; }
+
+label {
+    display: block;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+select:focus, input:focus, textarea:focus {
+    outline: none;
+    border-color: #003366;
+}
+
+button {
+    margin-top: 24px;
+    padding: 12px 28px;
+    background: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover { background: #002347; }
+
+.message {
+    background: #fdecea;
+    color: #b02a37;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.message.success {
+    background: #e6f4ea;
+    color: #1e7e34;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+th {
+    background: #003366;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:hover { background: #f7f9fc; }
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-Pending  { background: #fff3cd; color: #856404; }
+.badge-Approved { background: #d4edda; color: #155724; }
+.badge-Declined { background: #f8d7da; color: #721c24; }
+.badge-Completed{ background: #e2e3e5; color: #383d41; }
+
+.actions a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.actions a.delete { color: #b02a37; }
+
+.empty-state {
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
+}
